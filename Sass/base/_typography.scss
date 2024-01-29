@@ -1,5 +1,7 @@
 @use "../abstracts/variables";
 
 body {
-
+    background: variables.$white;
+    font-family: 'Montserrat';
+    font-weight: 400;
 }
