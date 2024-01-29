@@ -1,2 +1,16 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
+
+
+.home__page{
+    background-image: url(../images/bg-imgs/home__pages-img.png);
+    background-repeat: no-repeat;
+    padding: 80px 0 210px 40px;
+
+    .home__page-title{
+        color: variables.$white;
+        font-size: 96px;
+        font-weight: 700;  
+        padding-bottom: 40px;     
+    }
+}

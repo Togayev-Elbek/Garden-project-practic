@@ -1,2 +1,15 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
+
+.btn{
+    width: 220px;
+    border-radius: 6px;
+    background: variables.$green;
+
+    button{
+        color: variables.$white;
+        padding: 16px 56px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
