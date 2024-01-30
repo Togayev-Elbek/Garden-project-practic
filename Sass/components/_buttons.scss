@@ -44,9 +44,18 @@
     text-align: center;
     @include mixins.search-icon($position: absolute, $top: 224px, $left: 16px);
 
+    &:hover{
+        background: variables.$black;
+        cursor: pointer;
+    }
     button{
         color: variables.$white;
         font-size: 20px;
         font-weight: 600;
+
+        &:hover{
+            color: variables.$white;
+            cursor: pointer;
+        }
     }
 }
