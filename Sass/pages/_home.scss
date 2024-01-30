@@ -14,3 +14,47 @@
         padding-bottom: 40px;     
     }
 }
+.category{
+    padding: 80px 0;
+
+    .category__top{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+
+        .universal__title{
+            color: variables.$black;
+            font-size: 49px;
+            font-weight: 700;
+
+        }
+        .category__btn{
+            padding: 8px 16px;
+            border: 1px solid variables.$grey-divider;
+            border-radius: 6px;
+
+            button{
+                color: variables.$grey;
+                font-size: 16px;
+                font-weight: 500; 
+            }
+        }
+    }
+    .box__parent{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 30px;
+
+        .Category__boxs-img{
+            width: 295px;
+        }
+        .category__info{
+            color: variables.$black;
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 16px;
+            text-align: center;
+        }
+    }
+}
