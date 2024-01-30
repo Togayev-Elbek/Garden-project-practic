@@ -4,6 +4,7 @@
 
 .header{
     padding: 30px 0;
+    border-bottom: 1px solid variables.$grey-divider;
 
 
     .container{
@@ -12,12 +13,7 @@
         align-items: center;
         justify-content: space-between;
 
-        .header__left{
 
-            .header__brand-logo{
-
-            }
-        }
         .header__center{
 
             .nav{
