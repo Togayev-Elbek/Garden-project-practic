@@ -17,28 +17,29 @@
 .category{
     padding: 80px 0;
 
-    .category__top{
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        padding-bottom: 40px;
 
-        .universal__title{
-            color: variables.$black;
-            font-size: 49px;
-            font-weight: 700;
+}
+.category__top{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
 
-        }
-        .category__btn{
-            padding: 8px 16px;
-            border: 1px solid variables.$grey-divider;
-            border-radius: 6px;
+    .universal__title{
+        color: variables.$black;
+        font-size: 49px;
+        font-weight: 700;
 
-            button{
-                color: variables.$grey;
-                font-size: 16px;
-                font-weight: 500; 
-            }
+    }
+    .category__btn{
+        padding: 8px 16px;
+        border: 1px solid variables.$grey-divider;
+        border-radius: 6px;
+
+        button{
+            color: variables.$grey;
+            font-size: 16px;
+            font-weight: 500; 
         }
     }
 }
