@@ -83,6 +83,17 @@ body {
   font-weight: 600;
 }
 
+.category__btn {
+  padding: 8px 16px;
+  border: 1px solid #DDD;
+  border-radius: 6px;
+}
+.category__btn button {
+  color: #8B8B8B;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .header {
   padding: 30px 0;
 }
@@ -129,18 +140,12 @@ body {
 }
 .category__top .universal__title {
   color: #282828;
-  font-size: 49px;
+  font-size: 64px;
   font-weight: 700;
+  margin-right: 32px;
 }
-.category__top .category__btn {
-  padding: 8px 16px;
-  border: 1px solid #DDD;
-  border-radius: 6px;
-}
-.category__top .category__btn button {
-  color: #8B8B8B;
-  font-size: 16px;
-  font-weight: 500;
+.category__top .Line__img {
+  width: 717px;
 }
 
 .box__parent {
@@ -151,7 +156,7 @@ body {
 .box__parent .Category__boxs-img {
   width: 295px;
 }
-.box__parent .category__info {
+.box__parent .box__bottom-info {
   color: #282828;
   font-size: 20px;
   font-weight: 500;
@@ -202,4 +207,60 @@ body {
   color: #FFF;
   font-size: 20px;
   font-weight: 500;
+}
+
+.sale {
+  margin: 80px 0 306px 0;
+}
+.sale .Line__img {
+  margin-right: -3px;
+  width: 991px;
+}
+.sale .box__parent {
+  gap: 20px;
+}
+.sale .box__parent .box {
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid #DDD;
+}
+.sale .box__parent .box .chegirma {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  padding: 4px 8px;
+  background: #393;
+  border-radius: 6px;
+  position: absolute;
+  top: 32px;
+  bottom: auto;
+  right: 10px;
+  left: auto;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.sale .box__parent .box .Category__boxs-img {
+  width: 300px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+.sale .box__parent .box .sale__box-content {
+  padding: 0 15px 32px 14px;
+}
+.sale .box__parent .box .sale__box-content .box__bottom-info {
+  margin: 20px 0 16px 0;
+  text-align: left;
+}
+.sale .box__parent .box .sale__box-content .price {
+  color: #282828;
+  font-size: 40px;
+  font-weight: 600;
+}
+.sale .box__parent .box .sale__box-content .price .eski__price {
+  color: #8B8B8B;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration-line: strikethrough;
+  margin-left: 16px;
 }/*# sourceMappingURL=main.css.map */

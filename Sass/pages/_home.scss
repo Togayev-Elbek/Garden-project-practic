@@ -16,8 +16,6 @@
 }
 .category{
     padding: 80px 0;
-
-
 }
 .category__top{
     display: flex;
@@ -27,20 +25,13 @@
 
     .universal__title{
         color: variables.$black;
-        font-size: 49px;
+        font-size: 64px;
         font-weight: 700;
+        margin-right: 32px;
 
     }
-    .category__btn{
-        padding: 8px 16px;
-        border: 1px solid variables.$grey-divider;
-        border-radius: 6px;
-
-        button{
-            color: variables.$grey;
-            font-size: 16px;
-            font-weight: 500; 
-        }
+    .Line__img{
+        width: 717px;
     }
 }
 .box__parent{
@@ -51,7 +42,7 @@
     .Category__boxs-img{
         width: 295px;
     }
-    .category__info{
+    .box__bottom-info{
         color: variables.$black;
         font-size: 20px;
         font-weight: 500;
@@ -106,4 +97,58 @@
             }
         }
     }
+}
+.sale{
+    margin: 80px 0 306px 0;
+    
+    .Line__img{
+        margin-right: -3px;
+        width: 991px;
+    }
+    .box__parent{
+        gap: 20px;
+
+        .box{
+            position: relative;
+            border-radius: 12px;
+            border: 1px solid variables.$grey-divider;
+    
+            .chegirma{
+                color: variables.$white;
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: 0.6px;
+                padding: 4px 8px;
+                background: variables.$green;
+                border-radius: 6px;
+                @include mixins.search-icon($position: absolute, $right: 10px, $top: 32px)
+            }
+            .Category__boxs-img{
+                width: 300px;
+                border-top-right-radius: 12px;
+                border-top-left-radius: 12px;
+            }
+            .sale__box-content{
+                padding:  0 15px 32px 14px;
+
+                .box__bottom-info{
+                    margin: 20px 0 16px 0;
+                    text-align: left;
+                }
+                .price{
+                    color: variables.$black;
+                    font-size: 40px;
+                    font-weight: 600;
+    
+                    .eski__price{
+                        color: variables.$grey;
+                        font-size: 20px;
+                        font-weight: 500;
+                        text-decoration-line: strikethrough;
+                        margin-left: 16px;
+                    }
+                }
+            }
+        }
+    }    
 }

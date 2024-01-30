@@ -25,3 +25,14 @@
         font-weight: 600;
     }
 }
+.category__btn{
+    padding: 8px 16px;
+    border: 1px solid variables.$grey-divider;
+    border-radius: 6px;
+
+    button{
+        color: variables.$grey;
+        font-size: 16px;
+        font-weight: 500; 
+    }
+}
