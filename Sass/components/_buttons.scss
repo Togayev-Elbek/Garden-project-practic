@@ -36,3 +36,17 @@
         font-weight: 500; 
     }
 }
+.book__btn{
+    width: 268px;
+    border-radius: 6px;
+    background: variables.$green;
+    padding: 16px 32px;
+    text-align: center;
+    @include mixins.search-icon($position: absolute, $top: 224px, $left: 16px);
+
+    button{
+        color: variables.$white;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}

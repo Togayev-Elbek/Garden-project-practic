@@ -43,10 +43,10 @@
     }
     .box__bottom-info{
         color: variables.$black;
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-size: 20px;
         font-weight: 500;
-        margin-top: 16px;
-        text-align: center;
     }
 }
 .discount{
@@ -104,56 +104,107 @@
         margin-right: -3px;
         width: 991px;
     }
-    .box__parent{
-        gap: 20px;
+ 
+}
+.box__parent{
+    gap: 20px;
 
-        .box{
-            position: relative;
-            border-radius: 12px;
-            border: 1px solid variables.$grey-divider;
-    
-            .chegirma{
-                color: variables.$white;
-                font-size: 20px;
+    .box{
+        position: relative;
+        border-radius: 12px;
+        border: 1px solid variables.$grey-divider;
+
+        .chegirma{
+            color: variables.$white;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 0.6px;
+            padding: 4px 8px;
+            background: variables.$green;
+            border-radius: 6px;
+            @include mixins.search-icon($position: absolute, $right: 10px, $top: 32px)
+        }
+        .Category__boxs-img{
+            width: 300px;
+            border-top-right-radius: 12px;
+            border-top-left-radius: 12px;
+        }
+        .sale__box-content{
+            padding:  0 15px 32px 14px;
+
+            .box__bottom-info{
+                margin: 20px 0 16px 0;
+                text-align: left;
+            }
+            .price{
+                color: variables.$black;
+                font-size: 40px;
                 font-weight: 600;
-                letter-spacing: 0.6px;
-                padding: 4px 8px;
-                background: variables.$green;
-                border-radius: 6px;
-                @include mixins.search-icon($position: absolute, $right: 10px, $top: 32px)
-            }
-            .Category__boxs-img{
-                width: 300px;
-                border-top-right-radius: 12px;
-                border-top-left-radius: 12px;
-            }
-            .sale__box-content{
-                padding:  0 15px 32px 14px;
 
-                .box__bottom-info{
-                    margin: 20px 0 16px 0;
-                    text-align: left;
-                }
-                .price{
-                    color: variables.$black;
-                    font-size: 40px;
-                    font-weight: 600;
-    
-                    .eski__price{
-                        color: variables.$grey;
-                        font-size: 20px;
-                        font-weight: 500;
-                        text-decoration-line: strikethrough;
-                        margin-left: 16px;
-                    }
+                .eski__price{
+                    color: variables.$grey;
+                    font-size: 20px;
+                    font-weight: 500;
+                    text-decoration-line: strikethrough;
+                    margin-left: 16px;
                 }
             }
         }
-    }    
-}
+    }
+}   
 .map{
 
     .universal__title{
         margin-bottom: 40px;
+    }
+}
+
+.book{
+    margin: 125px 0 297px 0;
+
+    .book__contact{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 40px;
+
+        &:nth-child(4){
+            margin-left: 24px;
+        } 
+
+        .name{
+            color: variables.$black;
+            font-size: 20px;
+            font-weight: 600;
+            margin-right: 16px;
+           
+        }
+        .book__input{
+            width: 80px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: 1px solid variables.$grey-divider;
+            margin-right: 16px;
+
+            &::placeholder{
+                color: variables.$grey;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+        .choose{
+            width: 36px;
+            height: 36px;
+            border-radius: 6px;
+            margin-right: 40px;
+        }
+        .select{
+            width: 176px;
+            border-radius: 6px;
+            padding: 8px 16px;
+        }
+    }
+    .parent{
+        margin: 40px 0 32px 0;
     }
 }
