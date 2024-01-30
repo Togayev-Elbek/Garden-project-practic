@@ -138,14 +138,15 @@ body {
   flex-wrap: wrap;
   padding-bottom: 40px;
 }
-.category__top .universal__title {
+.category__top .Line__img {
+  width: 717px;
+}
+
+.universal__title {
   color: #282828;
   font-size: 64px;
   font-weight: 700;
   margin-right: 32px;
-}
-.category__top .Line__img {
-  width: 717px;
 }
 
 .box__parent {
@@ -263,4 +264,8 @@ body {
   font-weight: 500;
   text-decoration-line: strikethrough;
   margin-left: 16px;
+}
+
+.map .universal__title {
+  margin-bottom: 40px;
 }/*# sourceMappingURL=main.css.map */

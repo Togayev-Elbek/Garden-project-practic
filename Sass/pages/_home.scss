@@ -23,16 +23,15 @@
     flex-wrap: wrap;
     padding-bottom: 40px;
 
-    .universal__title{
-        color: variables.$black;
-        font-size: 64px;
-        font-weight: 700;
-        margin-right: 32px;
-
-    }
     .Line__img{
         width: 717px;
     }
+}
+.universal__title{
+    color: variables.$black;
+    font-size: 64px;
+    font-weight: 700;
+    margin-right: 32px;
 }
 .box__parent{
     display: grid;
@@ -151,4 +150,10 @@
             }
         }
     }    
+}
+.map{
+
+    .universal__title{
+        margin-bottom: 40px;
+    }
 }
