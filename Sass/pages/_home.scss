@@ -262,7 +262,7 @@
                     padding: 4px 8px;
                     background: variables.$green;
                     border-radius: 6px;
-                    @include mixins.search-icon ($position: absolute, $left: 226px)
+                    @include mixins.search-icon ($position: absolute, $left: 276px)
                 }
             }
             .sale__secateurs{
