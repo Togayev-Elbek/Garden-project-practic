@@ -24,7 +24,7 @@
     padding-bottom: 40px;
 
     .Line__img{
-        width: 717px;
+        width: 591px;
     }
 }
 .universal__title{
@@ -35,18 +35,21 @@
 }
 .box__parent{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 30px;
+    cursor: pointer;
 
     .Category__boxs-img{
-        width: 295px;
+        width: 270px;
     }
     .box__bottom-info{
         color: variables.$black;
         overflow: hidden;
         text-overflow: ellipsis;
+        text-align: center;
         font-size: 20px;
         font-weight: 500;
+        margin-top: 16px;
     }
 }
 .discount{
@@ -72,11 +75,13 @@
                 margin-right: 32px;
 
                 img{
+                    width: 624px;
+                    margin-bottom: -30px;
                     padding: 0;
                 }
             }
             .discount__user-information__content{
-                padding-top: 32px;
+                padding: 32px 0 32px 0;
                 
             
                 .discount__content-input{
@@ -102,7 +107,7 @@
     
     .Line__img{
         margin-right: -3px;
-        width: 991px;
+        width: 862px;
     }
  
 }
@@ -110,24 +115,20 @@
     gap: 20px;
 
     .box{
+        width: 272px;
         position: relative;
         border-radius: 12px;
         border: 1px solid variables.$grey-divider;
-
-        .chegirma{
-            color: variables.$white;
-            font-size: 20px;
-            font-weight: 600;
-            letter-spacing: 0.6px;
-            padding: 4px 8px;
-            background: variables.$green;
-            border-radius: 6px;
-            @include mixins.search-icon($position: absolute, $right: 10px, $top: 32px)
         }
         .Category__boxs-img{
-            width: 300px;
+            width: 270px;
             border-top-right-radius: 12px;
             border-top-left-radius: 12px;
+
+            &:hover{
+                transition: all 0.5s;
+                transform: translateY(-20px);
+            }
         }
         .sale__box-content{
             padding:  0 15px 32px 14px;
@@ -136,22 +137,33 @@
                 margin: 20px 0 16px 0;
                 text-align: left;
             }
-            .price{
-                color: variables.$black;
-                font-size: 40px;
-                font-weight: 600;
 
-                .eski__price{
-                    color: variables.$grey;
-                    font-size: 20px;
-                    font-weight: 500;
-                    text-decoration-line: strikethrough;
-                    margin-left: 16px;
-                }
-            }
         }
+}
+.price{
+    color: variables.$black;
+    font-size: 40px;
+    font-weight: 600;
+
+    .eski__price{
+        color: variables.$grey;
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration-line: strikethrough;
+        margin-left: 16px;
     }
-}   
+}
+.chegirma{
+    color: variables.$white;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    padding: 4px 8px;
+    background: variables.$green;
+    border-radius: 6px;
+    @include mixins.search-icon($position: absolute, $right: 10px, $top: 32px)
+}
+ 
 .map{
 
     .universal__title{
@@ -207,5 +219,100 @@
     .parent{
         margin: 40px 0 32px 0;
         cursor: pointer;
+    }
+}
+.descripton{
+    margin: 188px 0 308px 0;
+
+    .container{
+        display: flex;
+
+        .description__img{
+
+            img{
+                width: 715px;
+            }
+        }
+        .description__content{
+            width: 548px;
+
+            .description__content__title{
+                color: variables.$black;
+                font-size: 40px;
+                font-weight: 700;
+                margin-bottom: 32px;
+            }
+            .price__div{
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                .price{
+                    font-size: 64px;
+
+                    .eski__price{
+                        font-size: 40px;
+                    }
+                }
+                .description__chegirma{
+                    color: variables.$white;
+                    font-size: 20px;
+                    font-weight: 600;
+                    letter-spacing: 0.6px;
+                    padding: 4px 8px;
+                    background: variables.$green;
+                    border-radius: 6px;
+                    @include mixins.search-icon ($position: absolute, $left: 226px)
+                }
+            }
+            .sale__secateurs{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                margin-top: 32px;
+    
+                .miqdor{
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid variables.$white-grey;
+                    border-radius: 6px;
+                    margin-right: 32px;
+
+                    .minus,
+                    .plus{
+                        color: variables.$grey;
+                        padding: 17px;
+                        border: 1px solid variables.$white-grey;
+                        border-radius: 4px;
+                    }
+                    .one{
+                        color: variables.$black;
+                        font-weight: 600;
+                        letter-spacing: 0%;
+                        padding: 0 32px;                
+                    }
+                }
+            }
+            .description__title{
+                color: variables.$black;
+                font-size: 20px;
+                font-weight: 600;
+                margin: 32px 0 16px 0;
+            }
+            .description__content-info{
+                color: variables.$black;
+                font-size: 16px;
+                font-weight: 400;
+                text-align: left;
+                padding: 16px 0;
+            }
+            .description__content-info__link{
+                color: variables.$black;
+                font-size: 16px;
+                font-weight: 500;
+                text-decoration-line: underline;
+                margin-top: 16px;
+            }
+        }
     }
 }
