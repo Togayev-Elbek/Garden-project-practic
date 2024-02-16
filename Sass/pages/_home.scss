@@ -5,6 +5,7 @@
 .home__page{
     background-image: url(../images/bg-imgs/home__pages-img.png);
     background-repeat: no-repeat;
+    max-width: 100%;
     padding: 80px 0 210px 40px;
 
     .home__page-title{
@@ -16,31 +17,26 @@
 }
 .category{
     padding: 80px 0;
-}
-.category__top{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-bottom: 40px;
 
-    .Line__img{
-        width: 591px;
+    .category__top{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    
+        .Line__img{
+            width: 720px;
+        }
     }
-}
-.universal__title{
-    color: variables.$black;
-    font-size: 64px;
-    font-weight: 700;
-    margin-right: 32px;
 }
 .box__parent{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 32px;
     cursor: pointer;
 
     .Category__boxs-img{
-        width: 270px;
+        width: 293px;
     }
     .box__bottom-info{
         color: variables.$black;
@@ -51,6 +47,12 @@
         font-weight: 500;
         margin-top: 16px;
     }
+}
+.universal__title{
+    color: variables.$black;
+    font-size: 64px;
+    font-weight: 700;
+    margin-right: 32px;
 }
 .discount{
     .container{
@@ -105,30 +107,25 @@
 .sale{
     margin: 80px 0 306px 0;
     
-    .Line__img{
-        margin-right: -3px;
-        width: 862px;
+    .sale__top{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
     }
- 
 }
 .box__parent{
-    gap: 20px;
+    gap: 32px;
 
     .box{
-        width: 272px;
+        width: 293px;
         position: relative;
         border-radius: 12px;
         border: 1px solid variables.$grey-divider;
         }
         .Category__boxs-img{
-            width: 270px;
+            width: 291px;
             border-top-right-radius: 12px;
             border-top-left-radius: 12px;
-
-            &:hover{
-                transition: all 0.5s;
-                transform: translateY(-20px);
-            }
         }
         .sale__box-content{
             padding:  0 15px 32px 14px;
