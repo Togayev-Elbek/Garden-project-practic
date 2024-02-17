@@ -11,6 +11,12 @@
         padding: 16px 56px;
         font-size: 20px;
         font-weight: 600;
+
+        &:hover{
+            color: variables.$green;
+            border-radius: 6px;
+            background: variables.$white;
+        }
     }
 }
 .discount__btn{
@@ -37,16 +43,14 @@
     }
 }
 .book__btn{
-    width: 238px;
-    display: none;
+    width: 260px;
     border-radius: 6px;
     background: variables.$green;
-    padding: 16px 32px;
+    padding: 16px 0;
     text-align: center;
     @include mixins.search-icon($position: absolute, $top: 197px, $left: 16px);
 
     &:hover{
-        background: variables.$black;
         cursor: pointer;
     }
     button{
@@ -59,6 +63,16 @@
             cursor: pointer;
         }
     }
+}
+.card__number{
+    color: variables.$white;
+    padding: 7px;
+    background-color: variables.$green;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 90%;
+    @include mixins.search-icon($position: absolute, $top: 62px, $right: 60px);
 }
 .description__content-btn{
     width: 316px;

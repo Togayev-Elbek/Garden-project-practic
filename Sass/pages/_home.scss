@@ -17,6 +17,7 @@
 }
 .category{
     padding: 80px 0;
+    position: relative;
 
     .category__top{
         display: flex;
@@ -126,6 +127,7 @@
             width: 291px;
             border-top-right-radius: 12px;
             border-top-left-radius: 12px;
+
         }
         .sale__box-content{
             padding:  0 15px 32px 14px;
