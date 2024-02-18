@@ -88,7 +88,6 @@
                 
             
                 .discount__content-input{
-                    display: block;
                     background-color: inherit;
                     border-radius: 6px;
                     border: 1px solid variables.$white;
@@ -311,6 +310,134 @@
                 font-weight: 500;
                 text-decoration-line: underline;
                 margin-top: 16px;
+            }
+        }
+    }
+}
+.shopping__cart{
+    margin: 40px 0 316px 0;
+
+    .shopping__cart-top{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 40px;
+
+        .line__img-shopping{
+            width: 575px;
+        }
+    }
+    .shopped__products{
+        display: flex;
+        flex-wrap: wrap;
+
+        .shopped__products-product{
+            display: inline-block;
+
+            .secateurs__box{
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 10px;
+
+
+                .secateurs__box-content{
+                    width: 550px;
+                    padding: 32px;
+                    border: 1px solid variables.$grey-divider;
+                    border-radius: 0 12px 12px 0;
+                    height: 180px;
+
+                    .secateurs__box-content__top{
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 32px;
+
+                        .secateurs__box-content__top-title{
+                            color: variables.$black;
+                            font-size: 20px;
+                            font-weight: 500;
+                            padding-left: 28px;
+                        }
+                    }
+                    .price__div{
+                        display: flex;
+                        align-items: center;
+                        gap: 32px;
+
+                        .sale__secateurs{
+                
+                            .miqdor{
+                                display: flex;
+                                align-items: center;
+                                border: 1px solid variables.$white-grey;
+                                border-radius: 6px;
+            
+                                .minus,
+                                .plus{
+                                    color: variables.$grey;
+                                    padding: 17px;
+                                    border: 1px solid variables.$white-grey;
+                                    border-radius: 4px;
+                                }
+                                .one{
+                                    color: variables.$black;
+                                    font-weight: 600;
+                                    letter-spacing: 0%;
+                                    padding: 0 32px;                
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .shopped__products-order{
+            height: 568px;
+            border-radius: 12px;
+            background: variables.$light-grey;
+            padding: 32px;
+            margin-left: 32px;
+
+            .shopped__products-order__title{
+                color: variables.$black;
+                font-size: 40px;
+                font-weight: 700;
+                margin-bottom: 24px;
+            }
+            .universal__write{
+                color: variables.$grey;
+                font-size: 40px;
+                font-weight: 500;
+            }
+            .total{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: baseline;
+                margin: 18px 0 32px 0;
+                gap: 77px;
+
+                .total__price{
+                    color: variables.$black;
+                    font-size: 64px;
+                    font-weight: 700;
+                }
+            }
+            .order__content-input{
+                width: 423px;
+                background-color: variables.$white;
+                display: block;
+                border-radius: 6px;
+                border: 1px solid variables.$white;
+                padding: 16px 0 16px 32px;
+                margin-bottom: 16px;
+
+                &::placeholder{
+                    color: variables.$grey;
+                    font-size: 20px;
+                    font-weight: 500;
+                }
             }
         }
     }
