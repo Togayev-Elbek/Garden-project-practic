@@ -16,14 +16,15 @@
 
         .header__center{
 
-            .nav{
+            .header__nav{
                 padding-left: 0;
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
+                list-style: none;
                 gap: 32px;
 
-                .nav-item{
+                .header__nav-item{
                     
 
                     .nav-link{
