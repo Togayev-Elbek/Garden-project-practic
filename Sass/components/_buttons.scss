@@ -1,6 +1,14 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
 
+.open-modal{
+    padding: 18px 36px;
+    color: variables.$white;
+    cursor: pointer;
+    background: variables.$black;
+    text-align: center;
+    border-radius: 6px;
+}
 .btn{
     width: 220px;
     border-radius: 6px;
@@ -16,6 +24,7 @@
             color: variables.$green;
             border-radius: 6px;
             background: variables.$white;
+            cursor: grabbing;
         }
     }
 }

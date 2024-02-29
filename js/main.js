@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
     navItemActive = document.querySelectorAll('.nav-item'),
     parentNavitem = document.querySelector('.nav');
     
+    //  ! Tabs
 
     function hideBoxContent() {
         boxContent.forEach(item => {
@@ -34,7 +35,49 @@ window.addEventListener('DOMContentLoaded', () => {
                 }
             })
         }
+    });
+
+    // ! Modal
+
+    const modal = document.querySelector('.modal'),
+    openModalBtn = document.querySelector('.open-modal'),
+    closeModalBnt = document.querySelector('.close-modal')
+
+    function showModal() {
+        modal.classList.remove('hide'),
+        modal.classList.remove('fades')
+        modal.classList.add('show')
+        modal.classList.add('fade')
+        document.body.style.overflow = 'hidden';
+    }
+    function hideModal() {
+        modal.classList.remove('show'),
+        modal.classList.remove('fade')
+        modal.classList.add('hide'),
+        modal.classList.add('fades')
+        document.body.style.overflow = '';
+    }
+
+    openModalBtn.addEventListener('click', showModal);
+    closeModalBnt.addEventListener('click', hideModal);
+    
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal){
+            hideModal()
+        }
+    })
+    document.addEventListener('keydown', (event) => {
+        if (event.code === 'Escape' && modal.classList.contains('show')) {
+            hideModal()
+        }
     })
 
+    setTimeout(showModal, 15000)
+
+    const loader = document.querySelector('.loader-box');
+
+    setTimeout(() => {
+        loader.style.display = 'none'
+    }, 10000);
 
 })
