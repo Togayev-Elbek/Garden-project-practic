@@ -78,6 +78,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
         loader.style.display = 'none'
-    }, 9999);
+    }, 9950);
 
 })
