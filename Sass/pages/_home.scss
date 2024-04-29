@@ -160,7 +160,10 @@
                 
             
                 .discount__content-input{
+                    color: variables.$white;
                     width: 420px;
+                    font-size: 18px;
+                    font-weight: 500;
                     background-color: inherit;
                     border-radius: 6px;
                     display: block;
